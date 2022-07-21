@@ -1,6 +1,6 @@
 
 
-variable_choices=["rock", "paper", "scissors"]
+variable_options=["rock", "paper", "scissors"]
 
 from random import choice
 
@@ -10,7 +10,7 @@ from random import choice
 
 u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
 print("USER CHOICE:", u)
-if u not in variable_choices:
+if u not in variable_options:
     print("OOPS, TRY AGAIN")
     exit()
 
@@ -18,7 +18,7 @@ if u not in variable_choices:
 # COMPUTER SELECTION
 #
 
-c = choice(variable_choices)
+c = choice(variable_options)
 print("COMPUTER CHOICE:", c)
 
 #
