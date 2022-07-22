@@ -5,6 +5,36 @@ variable_options=["rock", "paper", "scissors"]
 from random import choice
 
 def winner(user_choice, computer_choice):
+
+    if u == "rock" and c == "rock":
+        #print("It's a tie!")
+        return "It's a tie!"
+    elif u == "rock" and c == "paper":
+        #print("The computer wins")
+        return "The computer wins"
+    elif u == "rock" and c == "scissors":
+        #print("The user wins")
+        return "The user wins"
+
+    elif u == "paper" and c == "rock":
+        #print("The computer wins")
+        return "The computer wins"
+    elif u == "paper" and c == "paper":
+        #print("It's a tie!")
+        return "It's a tie!"
+    elif u == "paper" and c == "scissors":
+        #print("The user wins")
+        return "The user wins"
+
+    elif u == "scissors" and c == "rock":
+        #print("The computer wins")
+        return "The computer wins"
+    elif u == "scissors" and c == "paper":
+        #print("The user wins")
+        return "The user wins"
+    elif u == "scissors" and c == "scissors":
+        #print("It's a tie!")
+        return "It's a tie!"
     return "OOPS - TODO"
 
 
